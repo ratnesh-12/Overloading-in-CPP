@@ -1,4 +1,4 @@
-# Overloading-in-CPP
+# Overloading in CPP
 
 ## Aim
 
@@ -13,7 +13,35 @@ Overloading in C++ allows using the same function or operator name with differen
 1. **Function Overloading** – Defining multiple functions with the same name but different parameter lists (number or type of arguments).
 2. **Operator Overloading** – Redefining the behavior of operators (like `+`, `-`, `*`, `==`) for user-defined types such as classes.
 
-### Example of Function Overloading
+---
+
+## Algorithm
+
+### Function Overloading
+
+1. Define a class or directly write functions with the same name.
+2. Differentiate them by using different parameter types or number of parameters.
+3. In the main function, create objects if needed and call the overloaded functions.
+4. The compiler resolves which function to call based on the arguments passed.
+
+### Operator Overloading
+
+1. Define a class with required data members.
+2. Declare an operator function inside the class using the syntax:
+
+   ```cpp
+   returnType operator symbol(parameters) { ... }
+   ```
+3. Implement the logic for the operator inside the function.
+4. In the main function, create objects of the class.
+5. Use the overloaded operator with objects to perform the desired operation.
+6. Display the result.
+
+---
+
+## Sample Program
+
+### Function Overloading
 
 ```cpp
 #include <iostream>
@@ -38,7 +66,7 @@ int main() {
 }
 ```
 
-### Example of Operator Overloading
+### Operator Overloading
 
 ```cpp
 #include <iostream>
@@ -65,6 +93,8 @@ int main() {
     return 0;
 }
 ```
+
+---
 
 ## Output (Example)
 
